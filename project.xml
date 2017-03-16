@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+
+  <meta title="Jam" package="com.michal-miriti.jam" version="1.0.0" company="Michael Miriti" />
+  <app main="Main" path="Export" file="Jam" />
+
+  <source path="source" />
+
+  <haxelib name="openfl" />
+  <haxelib name="actuate" />
+
+  <window width="480" height="640" fps="60" resizable="false" background="#000000" />
+
+  <assets path="assets" />
+
+</project>
