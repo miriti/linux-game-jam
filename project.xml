@@ -9,7 +9,7 @@
   <haxelib name="openfl" />
   <haxelib name="actuate" />
 
-  <window width="480" height="640" fps="60" resizable="false" background="#000000" />
+  <window width="480" height="640" fps="60" resizable="false" background="#0f142a" />
 
   <assets path="assets" />
 
