@@ -3,11 +3,21 @@ package;
 import openfl.events.Event;
 
 import common.GameSprite;
+import common.Centered;
+
 import motion.Actuate;
 
 class HitObject extends GameSprite {
-  var maxHealth:Float = 100;
-  var health:Float = 100;
+  public var maxHealth:Float = 100;
+  public var health:Float = 100;
+
+  public static function withCentered(asset: String, hor: Bool = true, ver: Bool = true) {
+    var ho = new HitObject();
+    var ce = new Centered(asset, hor, ver);
+    ho.addChild(ce);
+
+    return ho;
+  }
 
   public function new () {
     super();
@@ -22,10 +32,13 @@ class HitObject extends GameSprite {
 
     alpha = 0.5;
 
+    dispatchEvent(new Event('hit', true));
+
     Actuate.tween(this, 0.2, { alpha : 1 });
   }
 
   function dispose() {
+    GameMain.instance.shake();
     dispatchEvent(new Event('destroy'));
   }
 }

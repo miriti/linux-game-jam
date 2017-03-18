@@ -6,6 +6,7 @@ class Vector {
   public var x: Float;
   public var y: Float;
   public var length(get, never): Float;
+  public var rotation(get, never): Float;
 
   /**
     Get vector between display objects
@@ -18,7 +19,11 @@ class Vector {
     return new Vector(Math.cos(rotation * (Math.PI / 180)), Math.sin(rotation * (Math.PI / 180)));
   }
 
-  function get_length():Float {
+  function get_rotation(): Float {
+    return Math.atan2(y, x) * (180 / Math.PI);
+  }
+
+  function get_length(): Float {
     return Math.sqrt(Math.pow(x, 2) + Math.pow(y, 2));
   }
 

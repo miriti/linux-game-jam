@@ -5,12 +5,14 @@ import openfl.display.StageDisplayState;
 import openfl.display.StageScaleMode;
 import openfl.events.Event;
 import openfl.Lib;
+import openfl.ui.Mouse;
 
 import lime.ui.GamepadButton;
 import lime.ui.GamepadAxis;
 
 class State extends GameSprite {
   public var hasControl: Bool = false;
+  public var showCursor: Bool = true;
 
   public static var target_width = 1920;
   public static var target_height = 1080;
@@ -32,7 +34,21 @@ class State extends GameSprite {
 
     resize();
 
+    addEventListener(Event.ADDED_TO_STAGE, onAddedToStage);
+    addEventListener(Event.REMOVED_FROM_STAGE, onRemovedFromStage);
     addEventListener(Event.ENTER_FRAME, onEnterFrame);
+  }
+
+  function onAddedToStage(e:Event) {
+    if(!showCursor) {
+      Mouse.hide();
+    }
+  }
+
+  function onRemovedFromStage(e:Event) {
+    if(!showCursor) {
+      Mouse.show();
+    }
   }
 
   function onEnterFrame(e:Event) {

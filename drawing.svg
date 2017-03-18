@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="480"
+   height="640"
+   viewBox="0 0 127 169.33334"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.1 r"
+   sodipodi:docname="drawing.svg">
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4496">
+      <stop
+         style="stop-color:#cccb75;stop-opacity:1"
+         offset="0"
+         id="stop4492" />
+      <stop
+         style="stop-color:#e0ea7c;stop-opacity:0;"
+         offset="1"
+         id="stop4494" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4496"
+       id="linearGradient4498"
+       x1="58.598782"
+       y1="29.451691"
+       x2="58.598782"
+       y2="10.393792"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.26924422,0,0,3.6914773,42.565033,-81.597047)" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="4"
+     inkscape:cx="80.864581"
+     inkscape:cy="257.546"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer2"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1920"
+     inkscape:window-height="1047"
+     inkscape:window-x="0"
+     inkscape:window-y="16"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="bg"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-127.66665)">
+    <rect
+       style="opacity:1;fill:#285875;fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4485"
+       width="127"
+       height="169.33333"
+       x="-4.4408921e-16"
+       y="127.66666" />
+    <g
+       id="g5766"
+       transform="rotate(45,65.603124,179.12811)"
+       inkscape:export-filename="/home/michael/1GAM/04_Linux_GameJam/assets/s/crosshair.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <path
+         inkscape:connector-curvature="0"
+         id="path5760"
+         d="m 63.103124,179.12811 h 5"
+         style="fill:none;fill-rule:evenodd;stroke:#c2272a;stroke-width:0.5291667;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         style="fill:none;fill-rule:evenodd;stroke:#c2272a;stroke-width:0.5291667;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 65.603124,176.62811 v 5"
+         id="path5762"
+         inkscape:connector-curvature="0" />
+    </g>
+    <ellipse
+       style="opacity:1;fill:#cccb75;fill-opacity:1;stroke:none;stroke-width:0.58873039;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path5768"
+       cx="-161.6656"
+       cy="91.942711"
+       rx="8.598958"
+       ry="10.318749"
+       inkscape:export-filename="/home/michael/1GAM/04_Linux_GameJam/assets/s/enemy1/body.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       transform="rotate(-90)" />
+    <path
+       sodipodi:type="star"
+       style="opacity:1;fill:#5f7d8f;fill-opacity:1;stroke:none;stroke-width:0.52916664;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path5770"
+       sodipodi:sides="5"
+       sodipodi:cx="92.075005"
+       sodipodi:cy="161.53331"
+       sodipodi:r1="5.2071633"
+       sodipodi:r2="4.9971037"
+       sodipodi:arg1="0.98412059"
+       sodipodi:arg2="1.6124391"
+       inkscape:flatsided="true"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 94.957668,165.86976 -6.116081,-0.25484 -1.647608,-5.89549 5.097804,-3.38877 4.798223,3.80111 z"
+       inkscape:transform-center-x="0.017237441"
+       inkscape:transform-center-y="0.091910551"
+       transform="rotate(15,89.443094,162.4024)"
+       inkscape:export-filename="/home/michael/1GAM/04_Linux_GameJam/assets/s/enemy1/cockpit.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="opacity:1;fill:#c2272a;fill-opacity:1;stroke:none;stroke-width:0.52916664;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect5782"
+       width="26.19375"
+       height="7.4083333"
+       x="1.3229166"
+       y="147.24582" />
+    <path
+       style="opacity:1;fill:#cccb75;fill-opacity:1;stroke:none;stroke-width:0.43591949;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 25.264955,221.78654 5.689588,3.1268 3.035487,5.35444 10.309818,4.02596 -10.309821,4.02597 -3.035489,5.35444 -5.689588,3.1268 c 2.000498,-8.40958 2.902682,-16.77994 5e-6,-25.01441 z"
+       id="rect5784"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccccc"
+       inkscape:export-filename="/home/michael/1GAM/04_Linux_GameJam/assets/s/enemy2/body.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="stars">
+    <g
+       id="g4502"
+       transform="matrix(0.71596761,0,0,0.71596761,4.0992516,60.963676)"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="/home/michael/1GAM/04_Linux_GameJam/assets/s/star-trail.png">
+      <path
+         transform="rotate(-26.663706,58.195151,27.972918)"
+         inkscape:transform-center-y="0.19890612"
+         inkscape:transform-center-x="-0.15194577"
+         d="m 59.42357,29.201337 -1.018384,-0.515068 -0.809375,0.804556 0.17516,-1.127704 -1.015289,-0.521141 1.126639,-0.181892 0.181892,-1.126638 0.52114,1.015288 1.127705,-0.17516 -0.804556,0.809375 z"
+         inkscape:randomized="0"
+         inkscape:rounded="0"
+         inkscape:flatsided="false"
+         sodipodi:arg2="1.4137167"
+         sodipodi:arg1="0.78539816"
+         sodipodi:r2="0.60548997"
+         sodipodi:r1="1.574165"
+         sodipodi:cy="28.088234"
+         sodipodi:cx="58.310467"
+         sodipodi:sides="5"
+         id="path4488"
+         style="opacity:1;fill:#cccb75;fill-opacity:1;stroke:none;stroke-width:0.07076075;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         sodipodi:type="star" />
+      <rect
+         y="-44.796261"
+         x="58.033752"
+         height="73.248665"
+         width="0.62668759"
+         id="rect4490"
+         style="opacity:1;fill:url(#linearGradient4498);fill-opacity:1;stroke:none;stroke-width:0.2637763;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </g>
+    <rect
+       style="opacity:1;fill:#c2272a;fill-opacity:1;stroke:none;stroke-width:0.18835464;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect5107"
+       width="1.0179271"
+       height="1.0845214"
+       x="108.11973"
+       y="0.52441585"
+       transform="matrix(0.70407391,0.7101267,-0.70407391,0.7101267,0,0)"
+       inkscape:export-filename="/home/michael/1GAM/04_Linux_GameJam/assets/s/bullet.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="opacity:1;fill:#5f7d8f;fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 102.21774,95.493606 h -0.006 L 98.805551,92.847256 92.921155,90.999309 84.89839,85.6632 84.046244,95.49309 h -5.16e-4 v 0.0026 0.0031 h 5.16e-4 l 0.852146,9.82989 8.022765,-5.336109 5.884396,-1.847948 3.405989,-2.646352 h 0.006 l -0.003,-0.0026 z"
+       id="rect5109"
+       inkscape:export-filename="/home/michael/1GAM/04_Linux_GameJam/assets/s/player/body.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:connector-curvature="0" />
+    <path
+       style="opacity:1;fill:#754a4b;fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 85.502601,90.264378 c 0.21734,0.727412 0.2192,1.516388 0,2.368525 -0.94724,0.439071 -1.88942,0.879985 -3.50573,1.07576 -0.18344,-1.323243 -0.36461,-2.648758 0,-4.520045 1.99151,0.261771 2.47348,0.701135 3.50573,1.07576 z"
+       id="rect5121"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="/home/michael/1GAM/04_Linux_GameJam/assets/s/player/engine.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       sodipodi:nodetypes="ccccc"
+       inkscape:connector-curvature="0"
+       id="path5124"
+       d="m 85.304161,99.194065 c 0.21734,0.727412 0.2192,1.516385 0,2.368525 -0.94724,0.43907 -1.88942,0.87999 -3.50573,1.07576 -0.18344,-1.32324 -0.36461,-2.648758 0,-4.520045 1.99151,0.261771 2.47348,0.701135 3.50573,1.07576 z"
+       style="opacity:1;fill:#5a6066;fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <rect
+       style="opacity:1;fill:#cccb75;fill-opacity:1;stroke:none;stroke-width:0.36519116;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect5128"
+       width="6.9386325"
+       height="6.9386325"
+       x="29.441332"
+       y="-147.108"
+       transform="matrix(-0.84108542,0.54090231,-0.84108542,-0.54090231,0,0)"
+       inkscape:export-filename="/home/michael/1GAM/04_Linux_GameJam/assets/s/player/cockpit.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <image
+       width="144.13284"
+       height="40.038311"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABkQAAABjCAIAAABFbfsoAAAAA3NCSVQICAjb4U/gAAAAEHRFWHRT b2Z0d2FyZQBTaHV0dGVyY4LQCQAAAvhJREFUeNrt2DERggAAQFExDlF018WVCAQwCCEYDMFiAXYj MHrk+HfvRfjjH+bb/QIEPd+jCNB1vD4iQNfymESArm3/iQBd/+96VQEAAACACjMLAAAAgAwzCwAA AIAMMwsAAACADDMLAAAAgAwzCwAAAIAMMwsAAACADDMLAAAAgAwzCwAAAIAMMwsAAACADDMLAAAA gAwzCwAAAIAMMwsAAACADDMLAAAAgAwzCwAAAIAMMwsAAACADDMLAAAAgAwzCwAAAIAMMwsAAACA DDMLAAAAgAwzCwAAAIAMMwsAAACADDMLAAAAgAwzCwAAAIAMMwsAAACADDMLAAAAgAwzCwAAAIAM MwsAAACADDMLAAAAgAwzCwAAAIAMMwsAAACADDMLAAAAgAwzCwAAAIAMMwsAAACADDMLAAAAgAwz CwAAAIAMMwsAAACADDMLAAAAgAwzCwAAAIAMMwsAAACADDMLAAAAgAwzCwAAAIAMMwsAAACADDML AAAAgAwzCwAAAIAMMwsAAACADDMLAAAAgAwzCwAAAIAMMwsAAACADDMLAAAAgAwzCwAAAIAMMwsA AACADDMLAAAAgAwzCwAAAIAMMwsAAACADDMLAAAAgAwzCwAAAIAMMwsAAACADDMLAAAAgAwzCwAA AIAMMwsAAACADDMLAAAAgAwzCwAAAIAMMwsAAACADDMLAAAAgAwzCwAAAIAMMwsAAACADDMLAAAA gAwzCwAAAIAMMwsAAACADDMLAAAAgAwzCwAAAIAMMwsAAACADDMLAAAAgAwzCwAAAIAMMwsAAACA DDMLAAAAgAwzCwAAAIAMMwsAAACADDMLAAAAgAwzCwAAAIAMMwsAAACADDMLAAAAgAwzCwAAAIAM MwsAAACADDMLAAAAgAwzCwAAAIAMMwsAAACADDMLAAAAgAwzCwAAAIAMMwsAAACADDMLAAAAgAwz CwAAAIAMMwsAAACADDMLAAAAgAwzCwAAAIAMMwsAAACADDMLAAAAgIwTNB0LOH9rZmYAAAAASUVO RK5CYII= "
+       id="image5200"
+       x="-134.74112"
+       y="-60.038044" />
+    <path
+       inkscape:export-ydpi="96"
+       inkscape:export-xdpi="96"
+       inkscape:export-filename="/home/michael/1GAM/04_Linux_GameJam/assets/s/engine.png"
+       sodipodi:nodetypes="ccccc"
+       inkscape:connector-curvature="0"
+       id="path5772"
+       d="m 78.954498,33.202335 c 0.21734,0.727412 0.2192,1.516388 0,2.368525 -0.94724,0.439071 -1.88942,0.879985 -3.50573,1.07576 -0.18344,-1.323243 -0.36461,-2.648758 0,-4.520045 1.99151,0.261771 2.47348,0.701135 3.50573,1.07576 z"
+       style="opacity:1;fill:#754a4b;fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <rect
+       style="opacity:1;fill:#cccb75;fill-opacity:1;stroke:none;stroke-width:0.52916664;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect5780"
+       width="1.4499372"
+       height="1.4499372"
+       x="110.64433"
+       y="-1.5720704"
+       transform="rotate(45)"
+       inkscape:export-filename="/home/michael/1GAM/04_Linux_GameJam/assets/s/bullet.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="opacity:1;fill:#5f7d8f;fill-opacity:1;stroke:none;stroke-width:0.47329178;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 31.15792,104.12709 7.248958,0.8599 v 3.2802 l -7.248958,0.8599 z"
+       id="rect5787"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="/home/michael/1GAM/04_Linux_GameJam/assets/s/enemy2/cockpit.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+  </g>
+</svg>

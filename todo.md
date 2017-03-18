@@ -1,8 +1,7 @@
 - [ ] Explosions and camera shaking
-- [ ] More guns
-- [ ] Enemy animations
 - [ ] Shield fields
 - [ ] Screen boundaries
 - [ ] Pause menu
 - [ ] Sounds
 - [ ] Music
+- [ ] Powerups

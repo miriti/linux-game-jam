@@ -1,8 +1,9 @@
 package guns;
 
+import common.GameSprite;
 import openfl.display.Sprite;
 
-class GunSprite extends HitObject {
+class GunSprite extends GameSprite {
   public var muzzle:Sprite = new Sprite();
 
   public function new() {
