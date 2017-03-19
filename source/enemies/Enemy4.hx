@@ -1,17 +1,11 @@
 package enemies;
 
-import guns.*;
 import motion.Actuate;
 import motion.easing.*;
 
-class Enemy2 extends Enemy1 {
+class Enemy4 extends Enemy1 {
   public function new() {
     super();
-
-    var secondGun = new SlowGun(this);
-    secondGun.direction = 180;
-
-    mountGun(secondGun, -20, 0);
 
     for(gun in guns) {
       gun.active = false;

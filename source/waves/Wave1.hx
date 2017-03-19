@@ -16,9 +16,9 @@ class Wave1 extends Wave {
 
   function start() {
     spawn();
-    Actuate.timer(10).onComplete(function() {
+    Actuate.timer(7).onComplete(function() {
       spawn();
-      Actuate.timer(10).onComplete(function() {
+      Actuate.timer(7).onComplete(function() {
         spawn();
       });
     });

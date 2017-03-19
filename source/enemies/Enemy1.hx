@@ -34,9 +34,9 @@ class Enemy1 extends Enemy {
   }
 
   function startMotion() {
-    Actuate.tween(this, 10, {x: 100, y: 300}).onComplete(function() {
-      Actuate.tween(this, 10, {x: 380, y: 300}).onComplete(function() {
-        Actuate.tween(this, 10, {x: 240, y: 50}).onComplete(function() {
+    Actuate.tween(this, 7, {x: 70, y: 300}).onComplete(function() {
+      Actuate.tween(this, 7, {x: 380, y: 300}).onComplete(function() {
+        Actuate.tween(this, 7, {x: 240, y: 50}).onComplete(function() {
           startMotion();
         });
       });

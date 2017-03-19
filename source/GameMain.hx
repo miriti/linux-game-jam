@@ -7,12 +7,15 @@ import player.Player;
 import enemies.*;
 import waves.*;
 
+import powerups.PowerUp;
+
 import common.GameSprite;
 import common.State;
 import common.Centered;
 import common.Vector;
 
 import openfl.events.Event;
+import openfl.events.MouseEvent;
 import openfl.Lib;
 import openfl.ui.Keyboard;
 import openfl.ui.Mouse;
@@ -68,9 +71,23 @@ class GameMain extends State {
     });
 
     crosshair = new Centered("assets/s/crosshair.png");
+    crosshair.x = 240;
+    crosshair.y = 100;
     addChild(crosshair);
 
     wave = new Wave2(this);
+
+    spawnPowerUp();
+  }
+
+  public function spawnPowerUp() {
+    Actuate.timer(20).onComplete(function() {
+      var pup = PowerUp.random();
+      pup.y = 100 + Math.random() * 500;
+      pup.x = Math.random() > 0.5 ? -pup.width : 480 + pup.width;
+      gameLayer.addChild(pup);
+      spawnPowerUp();
+    });
   }
 
   public function shake(time: Float = 2, amp: Float = 30) {
@@ -114,8 +131,8 @@ class GameMain extends State {
       shakePhase.y += Math.PI * Math.random() * 20 * delta;
     }
 
-    crosshair.x = mouseX;
-    crosshair.y = mouseY;
+    crosshair.x = Main.instance.mouseX;
+    crosshair.y = Main.instance.mouseY;
 
     player.sprite.rotation = Math.atan2(crosshair.y - player.y, crosshair.x - player.x) * (180 / Math.PI);
 

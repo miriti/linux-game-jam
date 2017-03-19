@@ -3,8 +3,12 @@ package ship;
 import openfl.events.Event;
 
 import common.GameSprite;
+import common.Centered;
+
 import guns.Gun;
 import ui.Bar;
+
+import motion.Actuate;
 
 class Ship extends GameSprite {
   public var team:Team;
@@ -12,13 +16,41 @@ class Ship extends GameSprite {
   public var cockpit: HitObject;
   public var sprite:GameSprite = new GameSprite();
 
+  public var shielded:Bool = false;
+
   var guns:Array<Gun> = [];
   var healthBar:Bar;
+
+  var _shield:Centered;
 
   public function new() {
     super();
 
     addChild(sprite);
+    _shield = new Centered("assets/s/shield.png");
+    _shield.visible = false;
+    addChild(_shield);
+  }
+
+  public function shield() {
+    if(!shielded) {
+      _shield.alpha = 0;
+      _shield.scaleX = _shield.scaleY = 0;
+
+      Actuate.tween(_shield, 0.3, { alpha: 1, scaleX: 1, scaleY: 1 }).onComplete(function() {
+        shielded = true;
+
+        Actuate.timer(7).onComplete(function() {
+          Actuate.tween(_shield, 0.10, {alpha: 0.1}).repeat().reflect();
+        });
+
+        Actuate.timer(10).onComplete(function() {
+          shielded = false;
+          Actuate.tween(_shield, 0.3, { alpha: 0, scaleX: 0, scaleY: 0 }).onComplete(function() {
+          });
+        });
+      });
+    }
   }
 
   function initHealthBar() {
@@ -47,6 +79,13 @@ class Ship extends GameSprite {
     guns.push(gun);
   }
 
+  public function unmountGun(gun:Gun) {
+    if(guns.indexOf(gun) != -1) {
+      sprite.removeChild(gun.sprite);
+      guns.remove(gun);
+    }
+  }
+
   public function addHitObject(hitObject:HitObject, atx: Float = 0, aty: Float = 0) {
     hitObject.x = atx;
     hitObject.y = aty;
@@ -54,7 +93,7 @@ class Ship extends GameSprite {
     hitObjects.push(hitObject);
 
     hitObject.addEventListener('destroy', function(e:Event) {
-      removeChild(hitObject);
+      hitObject.parent.removeChild(hitObject);
       hitObjects.remove(hitObject);
       equipmentDestroyed(hitObject);
     });

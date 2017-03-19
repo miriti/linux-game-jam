@@ -29,15 +29,20 @@ class Bullet extends Centered {
       for(enemy in GameMain.instance.battleShips.filter(function(ship) {
         return ship.team != team;
       })) {
-        var b = getBounds(GameMain.instance);
-        var sb = enemy.getBounds(GameMain.instance);
-
-        if(b.intersects(sb)) {
-          for(ho in enemy.hitObjects) {
-            if(ho.getBounds(GameMain.instance).intersects(b)) {
-              ho.hit(damage);
-              dispose();
-              return;
+        if(enemy.shielded) {
+          if(Vector.between(this, enemy).length < 50) {
+            dispose();
+          }
+        } else {
+          var b = getBounds(GameMain.instance);
+          var sb = enemy.getBounds(GameMain.instance);
+          if(b.intersects(sb)) {
+            for(ho in enemy.hitObjects) {
+              if(ho.getBounds(GameMain.instance).intersects(b)) {
+                ho.hit(damage);
+                dispose();
+                return;
+              }
             }
           }
         }

@@ -19,7 +19,7 @@ class Enemy3 extends Enemy {
     super();
 
     var body = new Centered("assets/s/enemy3/body.png");
-    addChild(body);
+    sprite.addChild(body);
 
     cockpit = HitObject.withCentered("assets/s/enemy3/cockpit.png");
     addHitObject(cockpit);
@@ -36,12 +36,12 @@ class Enemy3 extends Enemy {
     var engine1 = new Engine();
     engine1.x = -30;
     engine1.y = -30;
-    addChild(engine1);
+    sprite.addChild(engine1);
 
     var engine2 = new Engine();
     engine2.x = -30;
     engine2.y = 30;
-    addChild(engine2);
+    sprite.addChild(engine2);
 
     initHealthBar();
 

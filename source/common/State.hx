@@ -53,7 +53,7 @@ class State extends GameSprite {
 
   function onEnterFrame(e:Event) {
 #if neko
-    update(1/60); // TODO: Real fps from project.xml
+    update(1/Lib.current.stage.frameRate); // TODO: Real fps from project.xml
 #else
     var currentTime:Float = Date.now().getTime();
 

@@ -5,5 +5,7 @@ class Wave {
 
   public function new(game: GameMain) {
     this.game = game;
+
+    trace(this);
   }
 }

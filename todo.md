@@ -1,7 +1,7 @@
-- [ ] Explosions and camera shaking
-- [ ] Shield fields
-- [ ] Screen boundaries
-- [ ] Pause menu
+- [ ] Explosions
 - [ ] Sounds
 - [ ] Music
-- [ ] Powerups
+- [ ] Game over
+- [ ] Win
+- [ ] Two right guns bug
+- [ ] Hanging?

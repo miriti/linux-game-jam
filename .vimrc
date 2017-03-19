@@ -1,2 +1,2 @@
 set wildignore+=*/Export/*
-map <F9> :wa<CR>:!clear ; openfl test linux<CR>
+map <F9> :wa<CR>:!openfl test linux<CR>

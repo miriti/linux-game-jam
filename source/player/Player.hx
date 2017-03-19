@@ -17,7 +17,8 @@ class Player extends Ship {
 
   var image:Centered;
 
-  var gun:Gun;
+  var level = 0;
+
 
   public function new() {
     super();
@@ -42,7 +43,35 @@ class Player extends Ship {
     engine2.y = 20;
     sprite.addChild(engine2);
 
-    mountGun(new Gun(this), width / 2 - 10, 0);
+    mountGun(new Gun(this), 25, 0);
+  }
+
+  function unmountGuns() {
+    for(gun in guns) {
+      unmountGun(gun);
+    }
+  }
+
+  public function upgrade() {
+    level++;
+
+    switch(level) {
+      case 1: 
+        unmountGuns();
+        mountGun(new Gun(this), -10, -20);
+        mountGun(new Gun(this), -10, 20);
+      case 2:
+        unmountGuns();
+        mountGun(new Gun(this), 25, 0);
+        mountGun(new Gun(this), -10, -20);
+        mountGun(new Gun(this), -1, 20);
+    }
+  }
+
+
+  public function heal() {
+    cockpit.health = cockpit.maxHealth;
+    dispatchEvent(new Event("hit"));
   }
 
   override function update(delta: Float) {

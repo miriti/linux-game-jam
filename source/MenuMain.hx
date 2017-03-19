@@ -5,9 +5,16 @@ import openfl.events.MouseEvent;
 import openfl.Lib;
 import openfl.system.System;
 
-class MenuItem extends common.Centered {
-  public function new(bitmap: String, action: Void -> Void) {
-    super(bitmap, true, true);
+class MenuItem extends Sprite {
+  public function new(title: String, action: Void -> Void) {
+    super();
+
+    var text = ui.Font.getTextField();
+    text.text = title;
+
+    text.x = -text.width/2;
+    text.y = -text.height/2;
+    addChild(text);
 
     alpha = 0.6;
 
@@ -37,11 +44,11 @@ class MenuMain extends common.State {
   public function new () {
     super();
 
-    var new_game = new MenuItem("assets/menu/new-game.png", function() {
+    var new_game = new MenuItem("New Game", function() {
       Main.instance.setState(new GameMain());
     });
 
-    var quit = new MenuItem("assets/menu/quit.png", function() {
+    var quit = new MenuItem("Quit", function() {
       System.exit(0);
     });
 
