@@ -1,6 +1,7 @@
 package powerups;
 
 import openfl.events.Event;
+import openfl.Assets;
 
 import common.GameSprite;
 import common.Centered;
@@ -62,9 +63,12 @@ class PowerUp extends GameSprite {
   }
 
   override function update(delta: Float) {
-    if(image.getBounds(GameMain.instance).intersects(Player.instance.getBounds(GameMain.instance))) {
-      affect();
-      end();
+    if(!Player.instance.isDead) {
+      if(image.getBounds(GameMain.instance).intersects(Player.instance.getBounds(GameMain.instance))) {
+        Assets.getSound("assets/sfx/powerup.wav").play();
+        affect();
+        end();
+      }
     }
   }
 }

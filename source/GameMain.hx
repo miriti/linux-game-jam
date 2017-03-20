@@ -19,6 +19,7 @@ import openfl.events.MouseEvent;
 import openfl.Lib;
 import openfl.ui.Keyboard;
 import openfl.ui.Mouse;
+import openfl.Assets;
 
 import motion.Actuate;
 
@@ -68,6 +69,8 @@ class GameMain extends State {
     player.addEventListener('hit', function(e:Event) {
       shake(1, 5);
       bar.value = player.cockpit.health;
+
+      Assets.getSound("assets/sfx/hit.wav").play();
     });
 
     crosshair = new Centered("assets/s/crosshair.png");
@@ -109,11 +112,7 @@ class GameMain extends State {
   }
 
   override public function keyDown(keyCode: Int) {
-    if(keyCode == Keyboard.ESCAPE) {
-      Main.instance.setState(new MenuMain());
-    } else {
-      buttonsDown.set(keyCode, true);
-    }
+    buttonsDown.set(keyCode, true);
   }
 
   override public function keyUp(keyCode: Int) {

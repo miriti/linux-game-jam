@@ -15,10 +15,11 @@ class Player extends Ship {
   public var axisY: Float = 0;
   public var speed: Float = 300;
 
+  public var isDead: Bool = false;
+
   var image:Centered;
 
   var level = 0;
-
 
   public function new() {
     super();
@@ -31,6 +32,7 @@ class Player extends Ship {
     sprite.addChild(image);
 
     cockpit = HitObject.withCentered("assets/s/player/cockpit.png");
+    cockpit.sound = false;
     addHitObject(cockpit);
 
     var engine1:Engine = new Engine();
@@ -71,7 +73,6 @@ class Player extends Ship {
 
   public function heal() {
     cockpit.health = cockpit.maxHealth;
-    dispatchEvent(new Event("hit"));
   }
 
   override function update(delta: Float) {
@@ -83,7 +84,9 @@ class Player extends Ship {
 
   override function equipmentDestroyed(equip: HitObject) {
     if(equip == cockpit) {
-      // TODO Game over
+      isDead = true;
+      parent.removeChild(this);
+      Main.instance.setState(new GameOver(), true, 5);
     }
   }
 }

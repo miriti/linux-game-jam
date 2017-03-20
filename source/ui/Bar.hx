@@ -21,15 +21,17 @@ class Bar extends Sprite {
   }
 
   function set_value(newValue: Float): Float {
-    graphics.clear();
+    if(newValue != value) {
+      graphics.clear();
 
-    graphics.beginFill(0xcccb75);
-    graphics.drawRect(0, 0, barWidth, barHeight);
-    graphics.endFill();
+      graphics.beginFill(0xcccb75);
+      graphics.drawRect(0, 0, barWidth, barHeight);
+      graphics.endFill();
 
-    graphics.beginFill(0xc2272a);
-    graphics.drawRect(borderSize, borderSize, newValue / barMax * barWidth - borderSize * 2, barHeight - borderSize * 2);
-    graphics.endFill();
+      graphics.beginFill(0xc2272a);
+      graphics.drawRect(borderSize, borderSize, newValue / barMax * barWidth - borderSize * 2, barHeight - borderSize * 2);
+      graphics.endFill();
+    }
 
     return value = newValue;
   }

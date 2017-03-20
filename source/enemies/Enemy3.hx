@@ -15,6 +15,8 @@ import motion.easing.*;
 class Enemy3 extends Enemy {
   var _guns:Array<Gun> = [];
 
+  var isDead: Bool = false;
+
   public function new() {
     super();
 
@@ -52,6 +54,16 @@ class Enemy3 extends Enemy {
     aim();
     move();
 
+    cockpit.addEventListener("destroy", function(e: Event) {
+      Actuate.stop(this);
+
+      isDead = true;
+
+      for(gun in guns) {
+        gun.active = false;
+      }
+    });
+
     Actuate.timer(3).onComplete(function() {
       for(gun in _guns) {
         gun.active = true;
@@ -60,13 +72,21 @@ class Enemy3 extends Enemy {
   }
 
   function move() {
-    Actuate.tween(this, 3, {x: 80, y: 550}).ease(Sine.easeInOut).onComplete(function() {
-      Actuate.tween(this, 3, {x: 400, y: 550}).ease(Sine.easeInOut).onComplete(function() {
-        Actuate.tween(this, 3, {x: 400, y: 80}).ease(Sine.easeInOut).onComplete(function() {
-          Actuate.tween(this, 3, {x: 80, y: 80}).ease(Sine.easeInOut).onComplete(move);
-        });
+    if(!isDead) {
+      Actuate.tween(this, 3, {x: 80, y: 550}).ease(Sine.easeInOut).onComplete(function() {
+        if(!isDead) {
+          Actuate.tween(this, 3, {x: 400, y: 550}).ease(Sine.easeInOut).onComplete(function() {
+            if(!isDead) {
+              Actuate.tween(this, 3, {x: 400, y: 80}).ease(Sine.easeInOut).onComplete(function() {
+                if(!isDead) {
+                  Actuate.tween(this, 3, {x: 80, y: 80}).ease(Sine.easeInOut).onComplete(move);
+                }
+              });
+            }
+          });
+        }
       });
-    });
+    }
   }
 
   function aim() {

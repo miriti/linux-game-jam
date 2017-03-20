@@ -2,7 +2,10 @@ package;
 
 import common.State;
 import common.StateMachine;
-import openfl.display.FPS;
+
+import openfl.events.Event;
+import openfl.media.SoundTransform;
+import openfl.Assets;
 
 class Main extends StateMachine {
   public static var instance:Main;
@@ -16,8 +19,13 @@ class Main extends StateMachine {
     State.target_height = 640;
 
     setState(new Intro(), true, 5);
-//    setState(new GameMain());
 
-    addChild(new FPS(10, 10, 0xe8dd35));
+    startMusic();
 	}
+
+  function startMusic(e:Event = null) {
+    var sndTransform = new SoundTransform(0.7);
+    var sndChannel = Assets.getMusic("assets/music.ogg").play(0, 0, sndTransform);
+    sndChannel.addEventListener(Event.SOUND_COMPLETE, startMusic);
+  }
 }

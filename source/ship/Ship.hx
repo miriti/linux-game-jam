@@ -99,6 +99,18 @@ class Ship extends GameSprite {
     });
   }
 
+  public function deactivateGuns() {
+    for(gun in guns) {
+      gun.active = false;
+    }
+  }
+
+  public function activateGuns() {
+    for(gun in guns) {
+      gun.active = true;
+    }
+  }
+
   function equipmentDestroyed(equip: HitObject) {
   }
 }

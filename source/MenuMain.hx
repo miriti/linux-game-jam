@@ -5,11 +5,14 @@ import openfl.events.MouseEvent;
 import openfl.Lib;
 import openfl.system.System;
 
+import motion.Actuate;
+import motion.easing.*;
+
 class MenuItem extends Sprite {
   public function new(title: String, action: Void -> Void) {
     super();
 
-    var text = ui.Font.getTextField();
+    var text = ui.Font.getTextField(30);
     text.text = title;
 
     text.x = -text.width/2;
@@ -44,6 +47,29 @@ class MenuMain extends common.State {
   public function new () {
     super();
 
+    var title = ui.Font.getTextField(120);
+    title.text = "A*VOID";
+
+    var credit = ui.Font.getTextField(21, 0xcccb75, "upheavtt.ttf");
+    credit.text = "by Michael Miriti";
+    credit.alpha = 0;
+
+    var twitter = ui.Font.getTextField(21, 0xcccb75, "upheavtt.ttf");
+    twitter.text = "@michael_miriti";
+    twitter.alpha = 0;
+
+    title.x = (480 - title.width) / 2;
+    title.y = (640 - title.height) / 2;
+
+    twitter.x = (480 - twitter.width) / 2;
+    twitter.y = 640 - twitter.height;
+    credit.x = (480 - credit.width) / 2;
+    credit.y = twitter.y - credit.height;
+
+    addChild(title);
+    addChild(credit);
+    addChild(twitter);
+
     var new_game = new MenuItem("New Game", function() {
       Main.instance.setState(new GameMain());
     });
@@ -61,5 +87,12 @@ class MenuMain extends common.State {
     items.y = (Lib.current.stage.stageHeight) / 2;
 
     addChild(items);
+
+    items.alpha = 0;
+
+    Actuate.tween(title, 4, {y: 200}).ease(Sine.easeOut).delay(1);
+    Actuate.tween(items, 4, {alpha: 1}).ease(Sine.easeOut).delay(2);
+    Actuate.tween(credit, 4, {alpha: 1}).ease(Sine.easeOut).delay(2);
+    Actuate.tween(twitter, 4, {alpha: 1}).ease(Sine.easeOut).delay(2);
   }
 }

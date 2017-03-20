@@ -31,11 +31,4 @@ class Intro extends common.State {
     Actuate.stop(timer);
     Main.instance.setState(new MenuMain(), !instant, 5);
   }
-
-  override public function keyDown(keyCode: Int): Void {
-    if(!_skipped) {
-      _skipped = true;
-      skip(true);
-    }
-  }
 }
